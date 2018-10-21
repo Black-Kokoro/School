@@ -2,10 +2,10 @@
 
 	<section class="categories-section spad">
 		<div class="container">
-			<div class="section-title">
+<!--			<div class="section-title">
                             <h2 id="indexcp">Our Course Categories</h2>
 				<p id="indexcp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
-			</div>
+			</div>-->
 			<div class="row">
 				<!-- categorie -->
 				<div class="col-lg-4 col-md-6">

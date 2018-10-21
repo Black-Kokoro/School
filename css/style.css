@@ -373,7 +373,9 @@ div#wrapperHeader div#header img {
 ---------------------*/
 
 .categories-section .container {
-	margin-bottom: -34px;
+	/*margin-bottom: 900px;*/
+        margin-top: 600px;
+        /*float: outside;*/
 }
 
 .categorie-item {

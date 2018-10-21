@@ -101,7 +101,7 @@ $num_rows = mysqli_num_rows($result);
              
 <div id="wrapperHeader">
  <div id="header">
-  <img src="img/bc.png" alt="bc" />
+  <img src="img/bc.png" id="bc" />
   <img src="img/pp.png" alt="bc" class="vibrate-3" id="io"/>
   <!--<img src="img/pp.png" alt="bc" id="io" />-->
 
