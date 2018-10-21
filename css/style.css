@@ -159,8 +159,8 @@ div#wrapperHeader div#header {
 }
 
 div#wrapperHeader div#header img {
- width:1920px; /* the width of the logo image */
- height:948px; /* the height of the logo image */
+ width:1920px; 
+ height:948px; 
  margin:0 auto;
 }
 
@@ -374,8 +374,8 @@ div#wrapperHeader div#header img {
 
 .categories-section .container {
 	/*margin-bottom: 900px;*/
-        margin-top: 600px;
-        /*float: outside;*/
+        margin-top: 300px;
+/*        float: outside;*/
 }
 
 .categorie-item {

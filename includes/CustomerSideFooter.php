@@ -1,11 +1,11 @@
-<section class="banner-section spad">
+<section class="banner-section spad" >
 		<div class="container">
-			<div class="section-title mb-0 pb-2">
+			<div class="section-title mb-0 pb-2" >
                             <h2 id="indexcw">Join Our Community Now!</h2>
                             <p id="indexcw"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
 			</div>
 			<div class="text-center pt-5">
-				<a href="#" class="site-btn">Register Now</a>
+				<a href="#" class="site-btn" id="btc">Register Now</a>
 			</div>
 		</div>
 	</section>
@@ -59,7 +59,7 @@
 						<h4>Newsletter</h4>
 						<form class="footer-newslatter">
 							<input type="email" placeholder="E-mail">
-							<button class="site-btn">Subscribe</button>
+							<button class="site-btn" id="btc">Subscribe</button>
 							<p>*We don’t spam</p>
 						</form>
 					</div>

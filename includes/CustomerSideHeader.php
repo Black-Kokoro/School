@@ -98,26 +98,11 @@ $num_rows = mysqli_num_rows($result);
 			
 		</div>
 	</section>-->
-             
+          
 <div id="wrapperHeader">
- <div id="header">
-  <img src="img/bc.png" id="bc" />
-  <img src="img/pp.png" alt="bc" class="vibrate-3" id="io"/>
-  <!--<img src="img/pp.png" alt="bc" id="io" />-->
-
-  
-<!--    <div class="row">
-				<div class="col-lg-10 offset-lg-1">
-					<form class="intro-newslatter">
-						<input type="text" placeholder="Name">
-						<input type="text" class="last-s" placeholder="E-mail">
-						<button class="site-btn">Sign Up Now</button>
-					</form>
-				</div>
-			</div>-->
- </div> 
-   
-</div>
+    <img src="img/bc.png"   id="bc"/>
+    <img src="img/pp.png" alt="bc" class="vibrate-3" id="io"  />
+   </div>
 <!--        <div class="thumb" style=" transform-style: preserve-3d;">
                                 <a href="#" id="thumba"></a>
                            </div>-->
