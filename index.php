@@ -304,6 +304,6 @@
 	</section>
 	<!-- signup section end -->
 
-
+  
 	<!-- banner section -->
 	<?php include_once 'includes/CustomerSideFooter.php'; ?>
