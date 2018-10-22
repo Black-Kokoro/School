@@ -50,6 +50,7 @@ $num_rows = mysqli_num_rows($result);
 
 </head>
 <body background="img/background_image.png">
+    <!--<body background="img/background_image.png">-->
 	<!-- Page Preloder -->
      
 	<div id="preloder">

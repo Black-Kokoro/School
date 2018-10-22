@@ -68,13 +68,16 @@
 		</div>
 		<div class="footer-bottom" style="background-color: #ab4054">
 			<div class="footer-warp">
+                            
                             <ul class="footer-menu" style="color: white;">
 					<li><a href="#" style="color: white;">Terms & Conditions</a></li>
 					<li><a href="#" style="color: white;">Register</a></li>
 					<li><a href="#" style="color: white;">Privacy</a></li>
 				</ul>
+                            
                             <div class="copyright" style="color: white;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" style="color: white;">Malath</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" style="color: white;">Malath
+<img src="img/anilogo2.gif"></a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 			</div>
 		</div>
