@@ -9,6 +9,7 @@
 	<link href="css/datepicker3.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
         <link href="../admin/css/manualstyle.css" rel="stylesheet" type="text/css"/>
+        <link href="../admin/css/manualstyle.css" rel="stylesheet" type="text/css"/>
 	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<!--[if lt IE 9]>
@@ -102,16 +103,15 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li class="active"><a href="index.php">Dashboard</a></li>
-			<li ><a href="manage_users.php#user"> Manage Users</a></li>
-			<li><a href="majors.php">Instructors Majors</a></li>
-                        <li><a href="relations.php">References Relations</a></li>
-                        <li><a href="widgets.html"> Widgets</a></li>
-			<li><a href="charts.html">Charts</a></li>
-			<li><a href="elements.html"> UI Elements</a></li>
-                        <li><a href="products.php">Products</a></li>
-                        <li><a href="NewOrders.php">New Orders</a></li>
-			<li><a href="panels.html">Alerts &amp; Panels</a></li>
+			<li class="active"><a href="index.php"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
+			<li ><a href="manage_users.php#user"><em class="fa fa-dashboard">&nbsp;</em> Manage Users</a></li>
+			<li><a href="categories.php"><em class="fa fa-dashboard">&nbsp;</em> Categories</a></li>
+                        <li><a href="widgets.html"><em class="fa fa-calendar">&nbsp;</em> Widgets</a></li>
+			<li><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Charts</a></li>
+			<li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> UI Elements</a></li>
+                        <li><a href="products.php"><em class="fa fa-clone">&nbsp;</em> Products</a></li>
+                        <li><a href="NewOrders.php"><em class="fa fa-clone">&nbsp;</em> New Orders</a></li>
+			<li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Alerts &amp; Panels</a></li>
 			<li class="parent "><a data-toggle="collapse" href="#sub-item-1">
 				<em class="fa fa-navicon">&nbsp;</em> Multilevel <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
 				</a>
