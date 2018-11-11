@@ -1,10 +1,14 @@
 <?php include_once '../includes/connection.php'; ?>
 <?php
+session_start();
 if (isset($_POST['submit'])) {
     // fetch data from Web Form 
+    $comp_id=$_SESSION["comp_id"];
     $relation_name = $_POST['relation_name'];
-    $query = "insert into code_relations(relation_name)
-              values('$relation_name')";
+    $query = "insert into code_relations(relation_name,create_date,create_user)
+              values('$relation_name',CURDATE(),'$comp_id')";
+//    echo $query;
+//    die;
     mysqli_query($link, $query);
     header("location:relations.php");
     
