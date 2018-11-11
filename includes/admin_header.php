@@ -1,12 +1,15 @@
 <?php
 session_start();
-//    if(!isset($_SESSION["email"])){ header("Location:Sign/login.php"); } else {
+
+    if(!isset($_SESSION["user_name"]) && !isset($_SESSION["user_type"])){
+        header("Location:Sign/login.php"); } else {
 //    $query   = "select * from product where product_id = {$_GET['product_id']} ";
-//echo $query;
-//die;
+if ($_SESSION["user_type"]!='A'){ header("Location:Sign/login.php"); }
 //    $result  = mysqli_query($link, $query);
 //echo $_GET['product_id']/;
-//     $ProductSet = mysqli_fetch_assoc($result); }
+//     $ProductSet = mysqli_fetch_assoc($result); 
+     
+}
  ?>
 <!DOCTYPE html>
 <html>
@@ -116,6 +119,7 @@ session_start();
 			<li ><a href="manage_users.php#user"> Manage Users</a></li>
 			<li><a href="majors.php">Instructors Majors</a></li>
                         <li><a href="relations.php">References Relations</a></li>
+                        <li><a href="nationalities.php"> Nationalities</a></li>
                         <li><a href="widgets.html"> Widgets</a></li>
 			<li><a href="charts.html">Charts</a></li>
 			<li><a href="elements.html"> UI Elements</a></li>
