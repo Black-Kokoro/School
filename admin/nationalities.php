@@ -39,7 +39,7 @@
                             
                         </table>
                         <?php
-                                echo "<a href='insert_relations.php'>Add
+                                echo "<a href='insert_nationalities.php'>Add
                                     </a>"                 
                             ?>
                     </div>
