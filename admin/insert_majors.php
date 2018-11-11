@@ -1,10 +1,18 @@
 <?php include_once '../includes/connection.php'; ?>
 <?php
+session_start();
+//$comp_id=$_SESSION["comp_id"];
+//echo $comp_id;
+//die;
+
 if (isset($_POST['submit'])) {
     // fetch data from Web Form 
+    $comp_id=$_SESSION["comp_id"];
     $major_name = $_POST['major_name'];
-    $query = "insert into code_majors(major_name)
-              values('$major_name')";
+    $query = "insert into code_majors(major_name,create_date,create_user)
+              values('$major_name',CURDATE(),'$comp_id')";
+//    echo $query;
+//    die;
     mysqli_query($link, $query);
     header("location:majors.php");
     
