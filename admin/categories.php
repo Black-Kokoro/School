@@ -6,6 +6,7 @@
 <?php include_once '../includes/admin_header.php'; ?>
 
 
+
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
    
 
@@ -15,23 +16,23 @@
        
         <div class="col-lg-12" id="user">
             <div class="panel panel-default">
-                <div class="panel-heading">Instuctors Majors</div>
+                <div class="panel-heading">Categouries Names</div>
                 <div class="panel-body">
                     <div class="col-md-12">
                         <table class="table table-hover">
                             <tr>
                                 <th>#</th>
-                                <th>Major Name</th>
+                                <th>Categoury name</th>
                             </tr>
                             <?php
-                            $query  = "select * from code_majors";
+                            $query  = "select * from categories";
                             $result = mysqli_query($link, $query);
                             while($row    = mysqli_fetch_assoc($result)){
                                 echo "<tr>";
-                                echo "<td>{$row['major_id']}</td>";
-                                echo "<td>{$row['major_name']}</td>";
-                                echo "<td><a href='edit_majors.php?major_id={$row['major_id']}'>Edit</a></td>";
-                                echo "<td><a href='delete_majors.php?major_id={$row['major_id']}'>Delete</a></td>";
+                                echo "<td>{$row['cat_id']}</td>";
+                                echo "<td>{$row['cat_name']}</td>";
+                                echo "<td><a href='edit_cat.php?cat_id={$row['cat_id']}'>Edit</a></td>";
+                                echo "<td><a href='delete_cat.php?cat_id={$row['cat_id']}'>Delete</a></td>";
                                 echo "</tr>";
                             }
                             
@@ -39,7 +40,7 @@
                             
                         </table>
                         <?php
-                                echo "<a href='insert_majors.php'>Add
+                                echo "<a href='InsertCat.php'>Add
                                     </a>"                 
                             ?>
                     </div>
