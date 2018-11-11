@@ -1,3 +1,13 @@
+<?php
+session_start();
+//    if(!isset($_SESSION["email"])){ header("Location:Sign/login.php"); } else {
+//    $query   = "select * from product where product_id = {$_GET['product_id']} ";
+//echo $query;
+//die;
+//    $result  = mysqli_query($link, $query);
+//echo $_GET['product_id']/;
+//     $ProductSet = mysqli_fetch_assoc($result); }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
