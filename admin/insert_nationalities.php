@@ -3,14 +3,14 @@
 session_start();
 if (isset($_POST['submit'])) {
     // fetch data from Web Form 
-    print_r($_SESSION);
-    die;
+//    print_r($_SESSION);
+//    die;
     $user_name=$_SESSION["user_name"];
     $nationality_name = $_POST['nationality_name'];
     $query = "insert into code_nationality(nationality_name,create_date,create_user)
               values('$nationality_name',current_date,'$user_name')";
-    echo $query;
-    die;
+//    echo $query;
+//    die;
     mysqli_query($link, $query);
     header("location:nationalities.php");
     
