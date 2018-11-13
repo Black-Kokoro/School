@@ -123,7 +123,7 @@ if ($_SESSION["user_type"]!='A'){ header("Location:Sign/login.php"); }
                         <li><a href="widgets.html"> Widgets</a></li>
 			<li><a href="charts.html">Charts</a></li>
 			<li><a href="elements.html"> UI Elements</a></li>
-                        <li><a href="products.php">Products</a></li>
+                        <li><a href="courses.php">Courses</a></li>
                         <li><a href="NewOrders.php">New Orders</a></li>
 			<li><a href="panels.html">Alerts &amp; Panels</a></li>
 			<li class="parent "><a data-toggle="collapse" href="#sub-item-1">

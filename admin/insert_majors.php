@@ -8,9 +8,10 @@ session_start();
 if (isset($_POST['submit'])) {
     // fetch data from Web Form 
     $comp_id=$_SESSION["comp_id"];
+    $user_name=$_SESSION["user_name"];
     $major_name = $_POST['major_name'];
     $query = "insert into code_majors(major_name,create_date,create_user)
-              values('$major_name',CURDATE(),'$comp_id')";
+              values('$major_name',current_date,'$user_name')";
 //    echo $query;
 //    die;
     mysqli_query($link, $query);
