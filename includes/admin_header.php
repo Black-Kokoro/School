@@ -121,6 +121,7 @@ if ($_SESSION["user_type"]!='A'){ header("Location:Sign/login.php"); }
                         <li><a href="relations.php">References Relations</a></li>
                         <li><a href="nationalities.php"> Nationalities</a></li>
                         <li><a href="rooms.php"> Rooms</a></li>
+                        <li><a href="instructors.php"> Instructors</a></li>
                         <li><a href="widgets.html"> Widgets</a></li>
 			<li><a href="charts.html">Charts</a></li>
 			<li><a href="elements.html"> UI Elements</a></li>
