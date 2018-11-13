@@ -41,7 +41,7 @@
                             $result_nat = mysqli_query($link, $query_nat);
                             $row_nat    = mysqli_fetch_assoc($result_nat);
                             
-                            $query_maj  = "select x.major_name from code_majors x where x.major_id=";
+                            $query_maj  = "select x.major_name from code_majors x where x.major_id= {$row['major_code']}";
                             $result_maj = mysqli_query($link, $query_maj);
                             $row_maj    = mysqli_fetch_assoc($result_maj);
                                 echo "<tr>";
