@@ -1,16 +1,20 @@
 <?php include_once '../includes/connection.php'; ?>
 <?php
+session_start();
 if (isset($_POST['submit'])) {
     echo '<pre>';
-    print_r($_FILES);//contain
+//    print_r($_FILES);//contain
 //    die;
     if($_FILES['course_img']['error']==0){
         $tmp_name=$_FILES['course_img']['tmp_name'];
         $name=$_FILES['course_img']['name'];
-        $path="../img/upload/";
+        $path="../img/courses/";
         move_uploaded_file($tmp_name, $path.$name);
         
     }
+    
+    ECHO $name;
+    DIE;
     
    
     
@@ -33,9 +37,11 @@ if (isset($_POST['submit'])) {
     
         $query = "INSERT INTO course( comp_id, branch_id, course_name, start_date, end_date,"
                 . " days_code, hours_no, total_hours, instructor_id, hour_from, hour_to, create_date, create_user, course_img) "
-                . "VALUES ('$comp_id','$branch_id','$course_name','$start_date','$end_date',"
-                . "'$days_code','$hours_no','$total_hours','$instructor_id','$hour_from','$hour_to','current_date','$user_name','$course_img')";
-
+                . "VALUES ($comp_id,$branch_id,'$course_name','$start_date','$end_date',"
+                . "'$days_code','$hours_no','$total_hours','$instructor_id','$hour_from','$hour_to',current_date,'$user_name','$course_img')";
+//
+//        echo $query;
+//        die;
 //    $query = "insert into product( cat_id, product_name, product_desc, product_image, product_price)
 //              values('$cat_id','$product_name','$product_desc','$product_image','$product_price')";
     mysqli_query($link, $query);
@@ -79,11 +85,11 @@ while ($row = mysqli_fetch_assoc($result11)) {
                     <div class="col-md-12">
                         <form role="form" action="" method="post" enctype="multipart/form-data">
                             <div class="form-group">
-                                <label>Course Id</label>
-                                <select name="cat_id" class="form-control"/>
+                                <label>Instructor Id</label>
+                                <select name="instructor_id" class="form-control"/>
                                 <?php
                                 foreach ($InsructersSet11 as $Instructor){
-                                    echo "<option value='{$Instructor['instructor_id']}'>{$category['instructor_name']}</option>";
+                                    echo "<option value='{$Instructor['instructor_id']}'>{$Instructor['instructor_name']}</option>";
                                 }
                                 
                                 ?>
@@ -118,11 +124,11 @@ while ($row = mysqli_fetch_assoc($result11)) {
                             </div>
                             <div class="form-group">
                                 <label>Hours From</label>
-                                <input type="text" class="form-control" name="hour_from" placeholder="hour_from">
+                                <input type="time" class="form-control" name="hour_from" placeholder="hour_from">
                             </div>
                             <div class="form-group">
                                 <label>Hours To</label>
-                                <input type="text" class="form-control" name="hour_to" placeholder="hour_to">
+                                <input type="time" class="form-control" name="hour_to" placeholder="hour_to">
                             </div>
                               <div class="form-group">
                                 <label>Course image</label>

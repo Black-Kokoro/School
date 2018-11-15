@@ -52,7 +52,7 @@
                                     echo "<td>{$row2['instructor_name']}</td>";
                                     echo "<td>{$row['hour_from']}</td>";
                                     echo "<td>{$row['hour_to']}</td>";
-                                    echo "<td><img src='../img/upload/{$row['course_img']}' width='200' height='200'></td>";
+                                    echo "<td><img src='../img/courses/{$row['course_img']}' width='200' height='200'></td>";
                                     echo "<td><a href='delete_courses.php?course_id={$row['course_id']}'>delete</a></td>";
                                     echo "<td><a href='edit_courses.php?course_id={$row['course_id']}&instructor_id={$row['instructor_id']}'>Edit</a></td>";
                                     echo "</tr>";
